@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Some meta tags coming in. They are placed before the title-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Joshua">
+    <title>Joshua Mugisha's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header> <!--outlines the header of the page. Has the navigation tab and all that-->
+
+    <div id="header" > <!--A division that outlines the header of the page-->
+        <div class="container">
+            <div class = "logo" >
+                <img src="logo.png" alt="LOGO" width="50px" height="50px" >
+            </div>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+                <i class="fa-solid fa-arrow-right" onclick="closemenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" id ="Home">
+                <p>Aspiring Top-Notch Software Engineer </p>
+                <h1> Hey there!, I am <span>Joshua Mugisha</span>. It is a pleasure for me to present some of my craft-work.</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="About"><!--About me section--->
+        <div class="container">
+            <div class="row"><!--rows of About me section-->
+                <div class="col-1">
+                    <img src="user.png" alt="User-profile" >
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>
+                        Hi! I'm an aspiring Software Engineer with a passion for problem-solving, automation, and data-driven solutions. I love exploring how technology can tackle real-world challenges, especially in smart farming and precision agriculture.
+                        Currently, I’m learning and building projects in system automation and software development, always looking for ways to improve efficiency and sustainability. I'm excited to grow, collaborate, and take on new challenges in this ever-evolving field.
+                        Let’s connect and build something great together!
+                    </p>
+                </div>
+                <div class="tab-titles"><!---creating a styled list of tabs--->
+                    <p class="tab-links active link" onClick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onClick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onClick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills"><!---Making skills tab the first active one-->
+                    <ul><!---Listing my skills--->
+                        <li>Basics of HTML,CSS and Javascript</li>
+                        <li>Basics of Data structures and algorithms</li>
+                        <li>Python Basics</li>
+                        <li>Basics of Linux OS</li>
+                        <li>Basics of Microsoft services, i.e word,excel and PowerPoint</li>
+                        <li>Basics of GitHub</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience"><!--Highlighting projects which have given me basic knowledge--->
+                    <ul>
+                        <li><span>2024-2025</span><br>Personal projects; including social media clones.</li>
+                        <li><span>2024-2025</span><br>Group coding project "Course-recommender App".</li>
+                        <li><span>2024-2025</span><br>Individual class project "Submission reminder App".</li>
+                        <li><span>2024-2025</span><br>Co-created HinganAI App. </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education"><!--Recent academic institutions--->
+                    <ul>
+                        <li><span>2024-present</span><br>Bachelor of Science in Software Engineering ---African Leadership University.</li>
+                        <li><span>2023-2024</span><br>Bachelor of Science in Crop Sciences ---University of Rwanda College of Agriculture and Animal Sciences(UR-CAVM).</li>
+                        <li><span>2022-2023</span><br>Bridge2rwanda scholars Program.</li>
+                        <li><span>2020-2021</span><br>Isomo Academy scholars program.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Projects">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="HinganAI.png" width="200" height="200">
+                    <div class="layer">
+                        <h3>HinganAI Project</h3>
+                        <p> An agriculture based technology that incorporates AI to monitor agents that lead to low agricultural-
+                            produce in Rural areas of Rwanda. Majorly soil PH imbalances, unpredictable weather and lack of updates-
+                            in the farming world faced by rural farmers. HinganAI seeks to empower farmers, enhance food security,-
+                            and drive economic development.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Submission Reminder App.png" width="200" height="200">
+                    <div class="layer">
+                        <h3>Submission reminder Project</h3>
+                        <p> This is a project aimed at tracking the progress of students' assignment submission and ensures that every
+                        student is reminded that they have a pending assignment to be done in a specific time, in case they haven't done so.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Course recommender.png" width="200" height="200">
+                    <div class="layer">
+                        <h3>Course recommender Project</h3>
+                        <p> This project aimed at gathering students' previous scores in Standard exams
+                            and from the data got it would recommend the student the area of strength in
+                            relationship to they past scores either in National examinations or standard exams.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
+</main>
+<footer><!--contacts section---->
+    <!--CONTACT!! -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"><img src="email.png" width="50" height="60"></i>j.mugisha2@alustudent.com</p>
+                    <p><i class="fa-solid fa-phone"><img src="phone.png" width="50" height="60"></i>(+250)798-611-084</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/joshua-r-mugisha-ba0206258/"><i class="fa-brands fa-linkedin"><img src="linkedin.png" width="55" height="50"></i></a>
+                        <a href="https://www.instagram.com/mugish007/"><i class="fa-brands fa-square-instagram"><img src="Instg.png" width="55" height="50"></i></a>
+                        <a href="https://x.com/JoshuaM90303"><i class="fa-brands fa-x-twitter"><img src="X nation.png" width="55" height="50"></i></a>
+                    </div>
+
+                    <a href="Joshua Mugisha's resume.pdf" download class="btn btn2"> My Resume</a>
+                </div>
+
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input name="Name" placeholder="Your Name" required type="text"/>
+                        <input  name="Email" placeholder="name@sth.com" required >
+                        <textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2025 Made with <i class="fa-regular fa-heart"></i>Better Beginning tutorials.</p>
+
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links"); //a collection of all the elements with the class name "tab-links". These represent the clickable tabs.
+        var tabcontents = document.getElementsByClassName("tab-contents");//a collection of all the elements with the class name "tab-contents". These represent the content that appears.
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+                //The classList property provides access to the list of classes on an element.
+                //The remove method removes a specified class from that list.
+            }
+
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            //event.currentTarget refers to the element that the event handler is attached to (the clicked tab).
+            //The add method adds the specified class to that element.
+
+        }
+        //Deactivates all tabs by removing the "active-link" class.
+        //Hides all content sections by removing the "active-tab" class.
+        //Highlights the clicked tab by adding the "active-link" class.
+        //Shows the corresponding content section by adding the "active-tab" class to the element with the ID provided in tabname.
+
+
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxJNvlufnU5B4fOIkRYVuKbItZdvDIYjyX91dSaCNY-UcOtJnPjYSbEJmjDEUa7lJUF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Thank you!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</footer>
+</body>
+</html>
